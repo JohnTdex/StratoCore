@@ -13,6 +13,8 @@
 ![Static Badge](https://img.shields.io/badge/--%2308071C?style=for-the-badge&logo=modrinth)
 ![Static Badge](https://img.shields.io/badge/--%231E0612?style=for-the-badge&logo=curseforge)
 </h1 align="center">
------------------------------
+
+
+
 **_Stratospherion Core is a required dependency as it contains mandatory materials for the Stratospherion mod family._**
 **_It contains all the necessary materials for the recipe of the mods._**
