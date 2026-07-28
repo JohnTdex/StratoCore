@@ -1,0 +1,13 @@
+{
+  "item.stratocore.steel_ingot": "Steel Ingot",
+  "item.stratocore.impure_steel": "Impure Steel",
+  "item.stratocore.carbon_steel": "Carbon Steel",
+  "item.stratocore.unstable_exorium_ingot": "Unstable Exorium Ingot",
+  "item.stratocore.exorium_ingot": "Exorium Ingot",
+
+
+  "block.stratocore.steel_block": "Steel Block",
+  "block.stratocore.exorium_block": "Exorium Block",
+
+  "creativetab.stratocore.stratocore_tab": "StratoCore"
+}

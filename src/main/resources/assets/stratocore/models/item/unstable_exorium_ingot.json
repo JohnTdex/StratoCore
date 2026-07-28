@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+    "textures": {
+        "layer0": "stratocore:item/unstable_exorium_ingot"
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "item": "stratocore:impure_steel"
+  },
+  "result": {
+    "id": "stratocore:steel_ingot"
+  },
+  "experience": 0.5,
+  "cookingtime": 100
+}

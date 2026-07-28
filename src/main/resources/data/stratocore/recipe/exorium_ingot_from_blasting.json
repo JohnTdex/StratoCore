@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "ingredient": {
+    "item": "stratocore:unstable_exorium_ingot"
+  },
+  "result": {
+    "id": "stratocore:exorium_ingot"
+  },
+  "experience": 0.5,
+  "cookingtime": 150
+}

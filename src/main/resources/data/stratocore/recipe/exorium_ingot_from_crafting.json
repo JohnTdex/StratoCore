@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "stratocore:exorium_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "stratocore:exorium_ingot"
+  }
+}

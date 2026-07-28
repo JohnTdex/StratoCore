@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "stratocore:block/steel_block"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "A": {
+      "item": "stratocore:steel_block"
+    },
+    "B": {
+      "item": "minecraft:redstone"
+    }
+  },
+  "pattern": [
+    "B#B",
+    "#A#",
+    "B#B"
+  ],
+  "result": {
+    "count": 6,
+    "id": "stratocore:unstable_exorium_ingot"
+  }
+}

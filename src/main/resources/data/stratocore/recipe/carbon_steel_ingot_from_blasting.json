@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "ingredient": {
+    "tag": "c:ingots/steel"
+  },
+  "result": {
+    "id": "stratocore:carbon_steel"
+  },
+  "experience": 0.5,
+  "cookingtime": 100
+}
