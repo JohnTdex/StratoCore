@@ -11,7 +11,7 @@
 [![Static Badge](https://img.shields.io/badge/github-repo-blue?style=for-the-badge&logo=github)](https://github.com/JohnTdex/StratoCore)
 <img src="https://img.shields.io/badge/License-MIT/ARR-blue?style=for-the-badge"/>
 ![Static Badge](https://img.shields.io/badge/--%2308071C?style=for-the-badge&logo=modrinth)
-![Static Badge](https://img.shields.io/badge/--%231E0612?style=for-the-badge&logo=curseforge)
+[![Static Badge](https://img.shields.io/badge/--%231E0612?style=for-the-badge&logo=curseforge)](https://www.curseforge.com/minecraft/mc-mods/stratospherion-core)
 </h1 align="center">
 
 
