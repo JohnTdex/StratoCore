@@ -25,7 +25,7 @@ public class StratoCoreClient {
     @SubscribeEvent
     static void onClientSetup(FMLClientSetupEvent event) {
         // Some client setup code
-        StratoCore.LOGGER.info("HELLO FROM CLIENT SETUP");
-        StratoCore.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
+        //StratoCore.LOGGER.info("HELLO FROM CLIENT SETUP");
+        //StratoCore.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
     }
 }
