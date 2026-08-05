@@ -25,8 +25,10 @@ public class StratoCoreCreativeTab {
                 output.accept(StratoItems.CARBON_STEEL);
                 output.accept(StratoItems.UNSTABLE_EXORIUM_INGOT);
                 output.accept(StratoItems.EXORIUM_INGOT);
+                output.accept(StratoItems.EXORIUM_BLUEPRINT);
                 output.accept(StratoBlocks.STEEL_BLOCK);
                 output.accept(StratoBlocks.EXORIUM_BLOCK);
+                output.accept(StratoBlocks.STRATOCORP_BEACON);
 
 
             }))

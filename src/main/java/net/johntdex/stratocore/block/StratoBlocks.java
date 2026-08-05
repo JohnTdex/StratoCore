@@ -1,6 +1,7 @@
 package net.johntdex.stratocore.block;
 
 import net.johntdex.stratocore.StratoCore;
+import net.johntdex.stratocore.block.entity.StratoBlockEntities;
 import net.johntdex.stratocore.item.StratoItems;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -23,6 +24,11 @@ public class StratoBlocks {
 
     public static final DeferredBlock<Block> EXORIUM_BLOCK = registerBlock("exorium_block",
             () -> new Block(Block.Properties.of().strength(5.0f, 8.0f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.METAL)));
+
+    public static final DeferredBlock<StratoCorpBeaconBlock> STRATOCORP_BEACON = registerBlock("stratocorp_beacon",
+            () -> new StratoCorpBeaconBlock(Block.Properties.of().strength(3.0f, 6.0f)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.METAL)));
 

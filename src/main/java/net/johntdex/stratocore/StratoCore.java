@@ -1,6 +1,7 @@
 package net.johntdex.stratocore;
 
 import net.johntdex.stratocore.block.StratoBlocks;
+import net.johntdex.stratocore.block.entity.StratoBlockEntities;
 import net.johntdex.stratocore.item.StratoItems;
 import net.johntdex.stratocore.item.StratoCoreCreativeTab;
 import org.slf4j.Logger;
@@ -44,6 +45,7 @@ public class StratoCore {
 
         StratoBlocks.register(modEventBus);
         StratoItems.register(modEventBus);
+        StratoBlockEntities.register(modEventBus);
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         //modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);

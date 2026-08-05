@@ -1,6 +1,7 @@
 {
   "values": [
     "stratocore:steel_block",
-    "stratocore:exorium_block"
+    "stratocore:exorium_block",
+    "stratocore:stratocorp_beacon"
   ]
 }

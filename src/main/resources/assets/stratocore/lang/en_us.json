@@ -4,10 +4,12 @@
   "item.stratocore.carbon_steel": "Carbon Steel",
   "item.stratocore.unstable_exorium_ingot": "Unstable Exorium Ingot",
   "item.stratocore.exorium_ingot": "Exorium Ingot",
+  "item.stratocore.exorium_blueprint": "Exorium Blueprint",
 
 
   "block.stratocore.steel_block": "Steel Block",
   "block.stratocore.exorium_block": "Exorium Block",
+  "block.stratocore.stratocorp_beacon": "StratoCorp Beacon",
 
   "creativetab.stratocore.stratocore_tab": "StratoCore"
 }

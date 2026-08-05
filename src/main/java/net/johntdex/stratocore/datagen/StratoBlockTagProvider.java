@@ -38,6 +38,12 @@ public class StratoBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(StratoBlocks.EXORIUM_BLOCK.get());
 
+        //STRATOCORP BEACON
+        tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(StratoBlocks.STRATOCORP_BEACON.get());
+        tag(BlockTags.NEEDS_IRON_TOOL)
+                .add(StratoBlocks.STRATOCORP_BEACON.get());
+
         //NETHERITE LEVEL
 
         // NEEDS_STEEL_TOOL is intentionally left empty for now — populate it later with your own
