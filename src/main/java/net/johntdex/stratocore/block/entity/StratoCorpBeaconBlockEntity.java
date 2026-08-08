@@ -1,11 +1,19 @@
 package net.johntdex.stratocore.block.entity;
 
+import net.johntdex.stratocore.block.StratoCorpBeaconBlock;
 import net.johntdex.stratocore.item.StratoItems;
+import net.johntdex.stratocore.screen.StratoCorpBeaconMenu;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.Containers;
+import net.minecraft.world.MenuProvider;
 import net.minecraft.world.SimpleContainer;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.Level;
@@ -13,13 +21,36 @@ import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.items.ItemStackHandler;
 
-public class StratoCorpBeaconBlockEntity extends BlockEntity {
+public class StratoCorpBeaconBlockEntity extends BlockEntity implements MenuProvider {
 
     public static final int SLOT_INGOT = 0;
     public static final int SLOT_AMETHYST_SHARD = 1;
     public static final int SLOT_OUTPUT = 2;
 
-    private static final int MAX_PROGRESS = 100;
+    private int progress = 0;
+    private int maxProgress = 100;
+
+    protected final ContainerData data = new ContainerData() {
+        @Override
+        public int get(int index) {
+            return switch (index) {
+                case 0 -> StratoCorpBeaconBlockEntity.this.progress;
+                case 1 -> StratoCorpBeaconBlockEntity.this.maxProgress;
+                default -> 0;
+            };
+        }
+        @Override
+        public void set(int index, int value) {
+            switch (index) {
+                case 0 -> StratoCorpBeaconBlockEntity.this.progress = value;
+                case 1 -> StratoCorpBeaconBlockEntity.this.maxProgress = value;
+            }
+        }
+        @Override
+        public int getCount() {
+            return 2;
+        }
+    };
 
     public final ItemStackHandler inventory = new ItemStackHandler(3) {
         @Override
@@ -39,8 +70,6 @@ public class StratoCorpBeaconBlockEntity extends BlockEntity {
         }
     };
 
-    private int progress = 0;
-
     public StratoCorpBeaconBlockEntity(BlockPos pos, BlockState blockState) {
         super(StratoBlockEntities.STRATOCORP_BEACON_BE.get(), pos, blockState);
 
@@ -55,7 +84,7 @@ public class StratoCorpBeaconBlockEntity extends BlockEntity {
         progress++;
         setChanged(level, pos, state);
 
-        if(progress >= MAX_PROGRESS) {
+        if(progress >= maxProgress) {
             craftItem();
             progress = 0;
             }
@@ -113,5 +142,15 @@ public class StratoCorpBeaconBlockEntity extends BlockEntity {
         super.loadAdditional(tag, registries);
         inventory.deserializeNBT(registries, tag.getCompound("inventory"));
         progress = tag.getInt("progress");
+    }
+
+    @Override
+    public Component getDisplayName() {
+        return Component.translatable("block.stratocore.stratocorp_beacon");
+    }
+
+    @Override
+    public AbstractContainerMenu createMenu(int containerId, Inventory playerInventory, Player player){
+        return new StratoCorpBeaconMenu(containerId, playerInventory, this, this.data);
     }
 }

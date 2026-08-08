@@ -10,6 +10,7 @@
   "block.stratocore.steel_block": "Steel Block",
   "block.stratocore.exorium_block": "Exorium Block",
   "block.stratocore.stratocorp_beacon": "StratoCorp Beacon",
+  "tooltip.stratocore.stratocorp_beacon": "A beacon that signals the StratoCorp Mother Ship to provide data in harnessing Exorium.",
 
   "creativetab.stratocore.stratocore_tab": "StratoCore"
 }
